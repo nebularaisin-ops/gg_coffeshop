@@ -1,0 +1,6 @@
+{
+  "name": "Culinary Logic",
+  "description": "Hospitality management platform combining guest dining menus, high-speed POS terminal, kitchen display system, floor map, and menu engineering analytics.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,75 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-display: 'Epilogue', system-ui, -apple-system, sans-serif;
+    --font-sans: 'Work Sans', system-ui, -apple-system, sans-serif;
+    --font-mono: 'JetBrains Mono', monospace;
+
+    /* Culinary Logic Design System Colors */
+    --color-surface: #fbf9f4;
+    --color-surface-dim: #dbdad5;
+    --color-surface-bright: #fbf9f4;
+    --color-surface-lowest: #ffffff;
+    --color-surface-low: #f5f3ee;
+    --color-surface-container: #f0eee9;
+    --color-surface-high: #eae8e3;
+    --color-surface-highest: #e4e2dd;
+    --color-on-surface: #1b1c19;
+    --color-on-surface-variant: #57423c;
+    --color-outline: #8b716b;
+    --color-outline-variant: #dec0b8;
+    --color-primary: #a23a1b;
+    --color-primary-container: #c35231;
+    --color-primary-fixed: #ffdbd1;
+    --color-on-primary-fixed: #3b0900;
+    --color-secondary: #4d6359;
+    --color-secondary-container: #cde5d9;
+    --color-on-secondary-container: #51675d;
+    --color-tertiary: #745902;
+    --color-tertiary-fixed: #ffdf96;
+    --color-error: #ba1a1a;
+    --color-error-container: #ffdad6;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    background-color: var(--color-surface);
+    color: var(--color-on-surface);
+    -webkit-font-smoothing: antialiased;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-display);
+  }
+
+  .font-mono-num, .font-mono-code {
+    font-family: var(--font-mono);
+  }
+}
+
+/* Custom Scrollbar for restaurant station boards and tables */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #f0eee9;
+}
+::-webkit-scrollbar-thumb {
+  background: #dec0b8;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #8b716b;
+}
+
+/* Float label patterns and interactive tactile states */
+.btn-pos:active {
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.15);
+  transform: translateY(1px);
+}
+
+.table-zebra tr:nth-child(even) {
+  background-color: #f7f5f0;
+}
